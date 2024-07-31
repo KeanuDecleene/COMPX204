@@ -12,14 +12,22 @@ public class reverse{
             System.out.println("Usage: resolve <name1> <name2> ... <nameN>");
             return;
         }
-        //FOR every DNS name given by user
-        for(String DNSName : args){
+        //FOR every ip address given by user
+        for(String ip : args){
             try {
-                //gets the internet address object for the given DNS name
-                InetAddress ipAddress = InetAddress.getByName(DNSName);
-                System.out.println(DNSName + " : " + ipAddress.getHostAddress()); //prints name and its address
+                //gets the internet address object for the given ip address
+                InetAddress ipAddress = InetAddress.getByName(ip);
+                //gets the host name for the IP address
+                String hostName = ipAddress.getHostName();
+                //checks if the hostname exists compared to original input
+                if (hostName.compareTo(ip) == 0){
+                    //prints result if no valid ip and hostname
+                    System.out.println(ip + " : " + "no name"); 
+                }else {
+                    System.out.println(ip + " : " + hostName);
+                } 
         }catch (Exception e) {
-            System.out.println(DNSName + " : unknown host");
+            System.out.println(ip + " : unknown host");
         }
     }
     }
