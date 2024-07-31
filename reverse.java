@@ -1,11 +1,11 @@
 import java.net.*; // imports java net library
 
 /*
- * Program that obtains the IPv4 address of a corresponding DNS name.
+ * Program that obtains the DNS names corresponding to a list of IP addresses.
  * 
  * @author Keanu De Cleene 
  */
-public class resolve {
+public class reverse{
     public static void main(String[] args) {
         //checking format of line
         if (args.length == 0){
