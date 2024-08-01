@@ -3,13 +3,13 @@ import java.net.*; // imports java net library
 /*
  * Program that obtains the DNS names corresponding to a list of IP addresses.
  * 
- * @author Keanu De Cleene 
+ * @author Keanu De Cleene ID: 162997
  */
 public class reverse{
     public static void main(String[] args) {
         //checking format of line
         if (args.length == 0){
-            System.out.println("Usage: resolve <name1> <name2> ... <nameN>");
+            System.out.println("Usage: reverse <IP1> <IP2> ... <IPN>");
             return;
         }
         //FOR every ip address given by user

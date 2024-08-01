@@ -3,7 +3,7 @@ import java.net.*; // imports java net library
 /*
  * Program that obtains the IPv4 address of a corresponding DNS name.
  * 
- * @author Keanu De Cleene 
+ * @author Keanu De Cleene ID: 1626997
  */
 public class resolve {
     public static void main(String[] args) {
